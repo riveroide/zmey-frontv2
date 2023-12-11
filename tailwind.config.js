@@ -1,11 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    
+    extend: {
+      fontFamily: {
+        striger: ['Striger', 'regular'],
+        impact: ['Impact', 'regular'],
+        poppins: ['Poppins', 'regular'],
+        roboto: ['Roboto', 'regular'],
+      },
+      colors:{
+        coal: '#0D0D0D',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+  ],
 }

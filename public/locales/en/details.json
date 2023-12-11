@@ -1,0 +1,11 @@
+{
+    "alertNoSelected": "Please select a color and a size",
+    "alertItemAdded": "Item added to your cart",
+    "buyButton": "Buy Now",
+    "addButton": "Add to cart",
+    "affirmText": "Buy now and pay later without any fees in orders over ",
+    "affirmWith": " with ",
+    "logInAlert": "You need to log in to make a purchase",
+    "discountText": "Insert code and get 10% of discount",
+    "seeMore": "See More"
+}

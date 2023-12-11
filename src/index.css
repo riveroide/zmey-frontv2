@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "striger";
+  src: url("./fonts/STRIGER.ttf");
+}
+
+@font-face {
+  font-family: "impact";
+  src: url("./fonts/impact.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth !important;
+}

@@ -1,0 +1,14 @@
+{
+    "yourCart": "Your cart",
+    "continue shopping": "Continue shopping",
+    "product": "PRODUCT",
+    "total": "TOTAL",
+    "checkout": "Check out",
+    "size": "Size:",
+    "empty": "Your cart is empty",
+    "logInAlert": "You need to log in to make a purchase",
+    "alertNoSelected": "Please select a color and a size",
+    "subtotal": "Subtotal",
+    "colorT": "Color: ",
+    "discountText": "Insert code and get 10% of discount"
+}

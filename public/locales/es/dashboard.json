@@ -1,0 +1,15 @@
+{
+  "favorites": "Favoritos",
+  "favoritesEmptyTitle": "Tu lista de favoritos está vacia!",
+  "favoritesEmptySubtitle": "Añade productos para encontrarlos rapidamente",
+  "orders": "Ordenes",
+  "ordersEmptyTitle": "No tienes ninguna orden",
+  "ordersEmptySubtitle": "Las compras realizadas podrán verse aquí",
+  "backButton": "Volver al inicio",
+  "logoutButton": "Cerrar Sesion",
+  "orderID": "ID de orden",
+  "Items": "Productos",
+  "Status": "Estado",
+  "Date": "Fecha",
+  "Total": "Total"
+}

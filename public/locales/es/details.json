@@ -1,0 +1,11 @@
+{
+    "alertNoSelected": "Por favor seleccione un color y un talle",
+    "alertItemAdded": "Producto añadido a tu carrito",
+    "buyButton": "Comprar Ahora",
+    "addButton": "Añadir al carrito",
+    "affirmText": "Compre ahora y pague después sin comisiones en pedidos superiores a ",
+    "affirmWith": " con ",
+    "logInAlert": "Necesitas iniciar sesion para realizar una compra",
+    "discountText": "Ingresa un codigo y obtenga 10% de descuento",
+    "seeMore": "Ver más"
+}
