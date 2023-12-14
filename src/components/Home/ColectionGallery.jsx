@@ -18,7 +18,7 @@ const ColectionGallery = ({
   return (
     <div
       id="collection"
-      className="mx-auto container flex justify-center items-center py-12 px-4 sm:px-6 2xl:px-0 min-w-full border-b-2 border-white"
+      className="mx-auto container flex justify-center items-center py-12 px-4 sm:px-6 2xl:px-0 min-w-full "
     >
       <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 gap-2">
         <div className="w-80 sm:w-auto flex flex-col justify-start items-start">

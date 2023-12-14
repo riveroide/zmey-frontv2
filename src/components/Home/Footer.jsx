@@ -5,12 +5,11 @@ import {
   MdOutlineShield,
   MdRestore,
 } from "react-icons/md";
-import {AiOutlineCheckSquare} from "react-icons/ai";
+import { AiOutlineCheckSquare } from "react-icons/ai";
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 
 const Footer = ({ adminDisplay }) => {
-
   const { t } = useTranslation("footer");
 
   if (adminDisplay) {
@@ -22,29 +21,29 @@ const Footer = ({ adminDisplay }) => {
       id="footer"
       className="bg-coal ease-in duration-500 font-roboto"
     >
-      <div className="w-full bg-white flex flex-wrap justify-center py-4 text-center">
-  <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
-    <MdLocalShipping size="48" />
-    <h3 className="lg:text-xl text-xl">{t("freeShipping")}</h3>
-    <p className="lg:text-sm text-sm">{t("freeShippingInfo")}</p>
-  </div>
-  <div className="flex flex-col items-center justify-center gap-1 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
-    <AiOutlineCheckSquare size="48" />
-    <h3 className="lg:text-xl text-xl">{t("chatWithUs1")}</h3>
-    <h3 className="lg:text-xl text-xl">{t("chatWithUs2")}</h3>
-    {/* <p className="lg:text-sm text-sm">{t("chatWithUsInfo")}</p> */}
-  </div>
-  <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
-    <MdOutlineShield size="48" />
-    <h3 className="lg:text-xl text-xl">{t("securePayments")}</h3>
-    <p className="lg:text-sm text-sm">{t("securePaymentsInfo")}</p>
-  </div>
-  <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
-    <MdRestore size="48" />
-    <h3 className="lg:text-xl text-xl">{t("returns")}</h3>
-    <p className="lg:text-sm text-sm">{t("returnsInfo")}</p>
-  </div>
-</div>
+      <div className="w-full bg-white flex flex-wrap justify-center py-4 text-center border-t-2 border-black">
+        <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
+          <MdLocalShipping size="48" />
+          <h3 className="lg:text-xl text-xl">{t("freeShipping")}</h3>
+          <p className="lg:text-sm text-sm">{t("freeShippingInfo")}</p>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-1 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
+          <AiOutlineCheckSquare size="48" />
+          <h3 className="lg:text-xl text-xl">{t("chatWithUs1")}</h3>
+          <h3 className="lg:text-xl text-xl">{t("chatWithUs2")}</h3>
+          {/* <p className="lg:text-sm text-sm">{t("chatWithUsInfo")}</p> */}
+        </div>
+        <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
+          <MdOutlineShield size="48" />
+          <h3 className="lg:text-xl text-xl">{t("securePayments")}</h3>
+          <p className="lg:text-sm text-sm">{t("securePaymentsInfo")}</p>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-2 w-1/2 sm:w-full md:w-1/2 lg:w-1/4">
+          <MdRestore size="48" />
+          <h3 className="lg:text-xl text-xl">{t("returns")}</h3>
+          <p className="lg:text-sm text-sm">{t("returnsInfo")}</p>
+        </div>
+      </div>
 
       <div className="max-w-screen-xl px-4 py-4 mx-auto space-y-8 sm:px-6 lg:space-y-4 lg:px-8">
         {/* <div className="sm:flex sm:items-center sm:justify-between">
@@ -53,7 +52,7 @@ const Footer = ({ adminDisplay }) => {
          
       </div> */}
 
-          {/* <ul className="flex justify-center gap-6 mt-8 sm:mt-0 sm:justify-end">
+        {/* <ul className="flex justify-center gap-6 mt-8 sm:mt-0 sm:justify-end">
             <li>
               <a
                 href="/"
@@ -122,7 +121,7 @@ const Footer = ({ adminDisplay }) => {
               </a>
             </li>
           </ul> */}
-        {/* </div> */} 
+        {/* </div> */}
 
         <div className="grid grid-cols-2 gap-8 pt-4 sm:grid-cols-2 lg:grid-cols-4 lg:pt-8">
           <div>
@@ -135,7 +134,7 @@ const Footer = ({ adminDisplay }) => {
                     href="#"
                     className="text-white transition hover:opacity-75"
                   >
-                   {t("aboutUs")}
+                    {t("aboutUs")}
                   </a>
                 </li>
 
@@ -152,7 +151,6 @@ const Footer = ({ adminDisplay }) => {
                   <a
                     href="/faqs"
                     className="text-white transition hover:opacity-75"
-                    
                   >
                     {t("faqs")}
                   </a>
@@ -166,8 +164,6 @@ const Footer = ({ adminDisplay }) => {
                     {t("privacyPolicy")}
                   </a>
                 </li>
-
-                
               </ul>
             </nav>
           </div>
@@ -177,12 +173,12 @@ const Footer = ({ adminDisplay }) => {
 
             <nav aria-label="Footer Navigation - Company" className="mt-6">
               <ul className="space-y-4 text-sm font-light">
-              <li>
+                <li>
                   <a
                     href="#"
                     className="text-white transition hover:opacity-75"
                   >
-                   {t("returnRefund")}
+                    {t("returnRefund")}
                   </a>
                 </li>
                 <li>
@@ -202,8 +198,6 @@ const Footer = ({ adminDisplay }) => {
                     {t("shippingTime")}
                   </a>
                 </li>
-
-                
               </ul>
             </nav>
           </div>
@@ -213,8 +207,7 @@ const Footer = ({ adminDisplay }) => {
 
             <nav aria-label="Footer Navigation - Company" className="mt-6">
               <ul className="space-y-4 text-sm font-light">
-              
-              <li>
+                <li>
                   <a
                     href="#"
                     className="text-white transition hover:opacity-75"
@@ -259,19 +252,13 @@ const Footer = ({ adminDisplay }) => {
             <nav aria-label="Footer Navigation - Legal" className="mt-6">
               <ul className="space-y-4 text-sm font-light">
                 <li>
-                  <p
-                   
-                    className="text-white transition hover:opacity-75"
-                  >
+                  <p className="text-white transition hover:opacity-75">
                     {t("message")}
                   </p>
                 </li>
 
                 <li>
-                  <p
-                    
-                    className="text-white transition hover:opacity-75"
-                  >
+                  <p className="text-white transition hover:opacity-75">
                     zmeyathletics@gmail.com
                   </p>
                 </li>
@@ -297,9 +284,10 @@ const Footer = ({ adminDisplay }) => {
             </nav>
           </div>
         </div>
+        <div className="flex justify-end">
+          <LanguageSelector />
+        </div>
 
-        
-        <LanguageSelector />
         <p className="text-xs text-gray-500 flex justify-center">
           &copy; 2023. Zmey Athletics. All rights reserved.
         </p>

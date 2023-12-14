@@ -27,7 +27,6 @@ const Home = ({ setAdminDisplay }) => {
   const [popUp, setPopUp] = useState(false);
   const [newsletterPopUp, setNewsletterPopUp] = useState(false);
   const [country, setCountry] = useState("");
-  console.log('test',Array.isArray(allCollections))
   // Obtener primeros 2 femeninos
   const womensProducts = allProducts?.filter((p) => p.gender[0] === "female");
   const firstWomensProducts = womensProducts?.slice(0, 2);
@@ -77,7 +76,6 @@ const Home = ({ setAdminDisplay }) => {
   // }, [currentUser])
 
   useEffect(() => {
-    console.log('incio useeffect')
     const fetchData = async () => {
       setAdminDisplay(false);
       setLoading(true);
@@ -95,7 +93,6 @@ const Home = ({ setAdminDisplay }) => {
       }
     };
     fetchData();
-    console.log('medio consolelog')
     axios
       .get("https://ipinfo.io/?token=1b7e1fcbc43d6a")
       .then((res) => setCountry(res.data.country))
@@ -106,7 +103,6 @@ const Home = ({ setAdminDisplay }) => {
           setPopUp(true);
         }
       });
-      console.log('fin consolelog')
   }, [dispatch]);
   if (loading) {
     return <Loader />;

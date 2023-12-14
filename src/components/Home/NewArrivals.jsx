@@ -6,7 +6,6 @@ const NewArrivals = ({
   newArrivalsT,
   shopNowT,
 }) => {
- console.log(productsToShow, "dentro de newarrivals")
   const renderProduct = (product) => {
    
     if (product) {
