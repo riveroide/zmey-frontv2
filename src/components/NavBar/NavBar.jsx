@@ -253,6 +253,7 @@ const NavBar = ({ setShowLogin, setShowCart, setShowMenu, adminDisplay }) => {
                       src={currentUser?.picture}
                       alt="Profile Pic"
                       className="object-cover rounded-full"
+                      referrerPolicy="no-referrer"
                     />
                   </div>
                 </Link>

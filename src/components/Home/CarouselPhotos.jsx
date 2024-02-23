@@ -26,7 +26,7 @@ const CarouselPhotos = ({ categoriesGallery }) => {
   return (
     <div
       id="categories"
-      className="container font-roboto font-bold flex lg:justify-center justify-center flex-col mx-auto min-w-full sm:px-8 border-b-2 border-white pt-[64px] min-h-screen gap-8 sm:gap-12"
+      className="container font-roboto font-bold flex lg:justify-center justify-center flex-col mx-auto min-w-full sm:px-8 border-b-2 border-white pt-[32px] min-h-screen gap-8 sm:gap-12"
     >
       <div className="hidden sm:flex justify-center space-x-4 lg:mb-0 pt-8">
         <button
@@ -190,10 +190,6 @@ const CarouselPhotos = ({ categoriesGallery }) => {
             </ButtonBack>
             <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
               <Slider className="w-[750px] h-[365px]">
-                {/* <div
-          id="slider"
-          className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
-        > */}
                 {filteredGallery?.map((item, index) => (
                   <Slide
                     index={index}
@@ -373,21 +369,6 @@ const CarouselPhotos = ({ categoriesGallery }) => {
           </div>
         </CarouselProvider>
       </div>
-      {/* <div className="text-center">
-        <button
-          className="bg-white text-black hover:bg-black hover:text-white hover:duration-500 py-3 px-6 rounded-full text-lg font-medium"
-          onClick={() => {
-            dispatch(
-              getProducts(undefined, undefined, undefined, undefined, filter)
-            );
-            dispatch(modifyGender(filter));
-            navigate(`/results`);
-            window.scrollTo(0, 0);
-          }}
-        >
-          Shop Now
-        </button>
-      </div> */}
     </div>
   );
 };
